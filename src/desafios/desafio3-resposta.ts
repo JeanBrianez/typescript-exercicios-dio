@@ -1,5 +1,3 @@
-export {} 
-
 let botaoAtualizar = document.getElementById('atualizar-saldo');
 let botaoLimpar = document.getElementById('limpar-saldo')!;
 let soma = document.getElementById('soma')! as HTMLInputElement;
@@ -33,9 +31,12 @@ if (botaoAtualizar) {
         somarAoSaldo(Number(soma.value)); 
     });
 }
-botaoLimpar.addEventListener('click', () => { 
-    limparSaldo();
-});
+
+if (botaoLimpar){
+    botaoLimpar.addEventListener('click', () => { 
+        limparSaldo();
+    });
+}
 
 /**
     <h4>Valor a ser adicionado: <input id="soma"> </h4>
