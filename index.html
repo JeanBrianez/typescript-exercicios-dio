@@ -9,10 +9,10 @@
 </head>
 <body>
     <div style="display: flex;">
-        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
-            <input id="login-input" placeholder="Login" onchange="preencherLogin(event)">
-            <input id="password-input" placeholder="Senha" type="password" onchange="preencherSenha(event)">
-            <input id="apikey-input" placeholder="Api Key" onchange="preencherApi(event)">
+        <div id="login" style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login-input" placeholder="Login" onchange="insertLogin(event)">
+            <input id="password-input" placeholder="Senha" type="password" onchange="insertPassword(event)">
+            <input id="apikey-input" placeholder="Api Key" onchange="insertApiKey(event)">
             <button id="login-button" disabled>Login</button>
         </div>
         <div id="search" style="margin-left: 20px">
